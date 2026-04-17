@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    line-height: 140%;
+}
+
+#contenedor {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    line-height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#detalle-principal {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#contenedor-imagen {
+    float: left;
+    /* Columna izquierda para imagen */
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contenedor-imagen img {
+    width: 100%;
+}
+
+#contenedor-info {
+    float: right;
+    /* Columna derecha para información */
+    width: 45%;
+    padding: 20px;
+}
+
+.precio-grande {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A90E2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    clear: both;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.btn-comprar {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-carrito {
+    background-color: #fff;
+    color: #4A90E2;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #4A90E2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mismas columnas de footer para consistencia */
+.footer-col {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.horario {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.limpiar {
+    clear: both;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 10px;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
