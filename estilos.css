@@ -1,12 +1,12 @@
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
 }
 
 #contenedor {
     width: 100%;
-    /* Ocupa toda la pantalla */
-    background-color: #f2f2f2;
+    margin: 0px;
 }
 
 header {
@@ -16,9 +16,11 @@ header {
     text-align: center;
 }
 
+/* 2. NAVEGACIÓN */
 nav {
     background-color: #444;
     line-height: 40px;
+    /* Centrado vertical */
 }
 
 nav ul {
@@ -38,6 +40,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* 3. GALERÍA DE PRODUCTOS (CUADRADITOS) */
 #galeria-productos {
     padding: 20px;
     background-color: #fff;
@@ -45,7 +48,7 @@ nav ul li a {
 
 .tarjeta {
     float: left;
-    /* Alineación horizontal de cuadraditos */
+    /* Alineación horizontal */
     width: 23%;
     /* 4 productos por fila */
     margin: 1%;
@@ -54,17 +57,25 @@ nav ul li a {
     border: 1px solid #ccc;
     text-align: center;
     box-sizing: border-box;
+    /* El padding no agranda el ancho */
+    min-height: 400px;
+    /* Evita que se enganchen si el texto es distinto */
 }
 
 .tarjeta img {
     width: 100%;
-    height: auto;
+    height: 180px;
+    /* Altura fija para todas las fotos */
+    object-fit: contain;
+    /* Ajusta la foto sin deformarla */
 }
 
 .tarjeta h3 {
     font-size: 14px;
     line-height: 1.2;
     height: 40px;
+    /* Espacio fijo para el título */
+    margin: 10px 0;
 }
 
 .precio {
@@ -84,17 +95,29 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Estilos para las columnas del footer */
+/* 4. PIE DE PÁGINA (FOOTER) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 10px;
+    clear: both;
+    /* PROPIEDAD CLAVE: Empuja el footer hacia abajo */
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .footer-col {
     float: left;
     width: 30%;
     margin: 1.5%;
     text-align: left;
+    font-size: 14px;
 }
 
 .footer-col h3 {
     margin-bottom: 10px;
     border-bottom: 1px solid #555;
+    padding-bottom: 5px;
 }
 
 .footer-col ul {
@@ -112,16 +135,8 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* 5. UTILIDADES */
 .limpiar {
     clear: both;
-    /* Evita que el footer se suba */
-}
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 10px;
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
 }
