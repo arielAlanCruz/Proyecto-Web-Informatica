@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoShop - Mother AM5 B850</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto globalmente (Presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="detalle-principal">
+                <article id="contenedor-imagen">
+                    <img src="./img/mother_am5B850.jpg" alt="Mother AM5 B850">
+                </article>
+                <article id="contenedor-info">
+                    <h2>Placa Madre ASUS TUF B850 AM5</h2>
+                    <p class="precio-grande">$ 772.845,29</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="22" data-nombre="Mother ASUS TUF B850 AM5"
+                        data-precio="772845.29" data-img="./img/mother_am5B850.jpg">
+                        AGREGAR AL CARRITO
+                    </button>
+                </article>
+            </section>
+
+            <section id="descripcion-producto">
+                <h3>Descripción del Artículo</h3>
+                <p>Placa base de gama alta con chipset B850, diseñada para gaming y overclocking. Compatible con
+                    procesadores AMD Ryzen 7000 y 9000.</p>
+            </section>
+
+            <section id="especificaciones">
+                <h3>Especificaciones Técnicas</h3>
+                <table class="tabla-especificaciones">
+                    <tr>
+                        <th>Socket</th>
+                        <td>AM5</td>
+                        <th>Chipset</th>
+                        <td>B850</td>
+                    </tr>
+                    <tr>
+                        <th>Memoria</th>
+                        <td>DDR5 (hasta 192 GB)</td>
+                        <th>Formato</th>
+                        <td>ATX</td>
+                    </tr>
+                    <tr>
+                        <th>M.2 Slots</th>
+                        <td>4 ranuras (PCIe 5.0 x4)</td>
+                        <th>USB</th>
+                        <td>USB 4.0, USB 3.2 Gen 2</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>Quiénes somos</h3>
+                <p>En TecnoShop nos apasiona la tecnología y nos dedicamos a ofrecer los mejores productos a nuestros
+                    clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
+                    para los amantes de la informática y el gaming.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Av Independencia 820, CABA</p>
+                <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
+                <p>Tel: 11 60402020</p>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

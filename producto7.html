@@ -3,61 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TecnoShop - Joystick</title>
-    <link rel="stylesheet" href="estilos-producto.css" type="text/css">
+    <title>TecnoShop - CPU Intel Core i9</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
 </head>
 
 <body>
     <div id="contenedor">
-        <header>
-            <h1>TecnoShop - Tu tienda de confianza</h1>
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="registro.html" class="btn-registro" id="user-display">🎁 10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </div>
         </header>
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Gaming</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
+
         <main>
             <section id="detalle-principal">
-                <article id="contenedor-imagen"><img src="img/Joystick Fantech Revolver.jpg" alt="Joystick White">
+                <article id="contenedor-imagen">
+                    <img src="./img/cpu_intelCorei9.jpg" alt="Intel Core i9">
                 </article>
                 <article id="contenedor-info">
-                    <h2>Joystick Inalambrico Fantech Revolver II White</h2>
-                    <p class="precio-grande">$ 35.990,00</p>
-                    <button class="btn-comprar">COMPRAR AHORA</button>
+                    <h2>CPU Intel Core i9 14900K</h2>
+                    <p class="precio-grande">$ 500.000,00</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="7" data-nombre="Intel Core i9 14900K"
+                        data-precio="500000.00" data-img="./img/cpu_intelCorei9.jpg">
+                        AGREGAR AL CARRITO
+                    </button>
                 </article>
-                <div class="limpiar"></div>
             </section>
+
             <section id="descripcion-producto">
                 <h3>Descripción del Artículo</h3>
-                <p>Libertad inalámbrica y diseño ergonómico. Compatible con múltiples plataformas para que no dejes de
-                    jugar.</p>
+                <p>Potencia extrema para overclocking y aplicaciones profesionales. Ideal para edición de video,
+                    renderizado 3D y gaming en 4K.</p>
             </section>
+
             <section id="especificaciones">
                 <h3>Especificaciones Técnicas</h3>
-                <table border="1">
+                <table class="tabla-especificaciones">
                     <tr>
-                        <th>Conexión</th>
-                        <td>Wireless 2.4GHz</td>
-                        <th>Compatibilidad</th>
-                        <td>PC / PS3</td>
+                        <th>Marca</th>
+                        <td>Intel</td>
+                        <th>Socket</th>
+                        <td>LGA 1700</td>
                     </tr>
                     <tr>
-                        <th>Batería</th>
-                        <td>600 mAh</td>
-                        <th>Color</th>
-                        <td>Blanco</td>
+                        <th>Núcleos</th>
+                        <td>16</td>
+                        <th>Hilos</th>
+                        <td>24</td>
                     </tr>
                     <tr>
-                        <th>Vibración</th>
-                        <td>Dual Motor</td>
-                        <th>Tipo</th>
-                        <td>Inalámbrico</td>
+                        <th>Frecuencia Base</th>
+                        <td>3.0 GHz</td>
+                        <th>Frecuencia Turbo</th>
+                        <td>5.6 GHz</td>
                     </tr>
                 </table>
             </section>
         </main>
+
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -74,13 +109,13 @@
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
-            <div class="limpiar"></div>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

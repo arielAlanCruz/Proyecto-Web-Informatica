@@ -3,60 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TecnoShop - Notebook</title>
-    <link rel="stylesheet" href="estilos-producto.css" type="text/css">
+    <title>TecnoShop - CPU AMD Ryzen 3</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
 </head>
 
 <body>
     <div id="contenedor">
-        <header>
-            <h1>TecnoShop - Tu tienda de confianza</h1>
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="registro.html" class="btn-registro" id="user-display">🎁 10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </div>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Notebooks</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
+
         <main>
             <section id="detalle-principal">
-                <article id="contenedor-imagen"><img src="img/Notebook Asus TUF.jpg" alt="Asus TUF"></article>
-                <article id="contenedor-info">
-                    <h2>Notebook Asus TUF 15.6" i7 RTX 4060 1TB</h2>
-                    <p class="precio-grande">$ 2.195.066,48</p>
-                    <button class="btn-comprar">COMPRAR AHORA</button>
+                <article id="contenedor-imagen">
+                    <img src="./img/cpu_ryzen3_5300g.jpg" alt="AMD Ryzen 3 5300G">
                 </article>
-                <div class="limpiar"></div>
+                <article id="contenedor-info">
+                    <h2>CPU AMD Ryzen 3 5300G con Gráficos Integrados</h2>
+                    <p class="precio-grande">$ 130.000,00</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="8" data-nombre="AMD Ryzen 3 5300G"
+                        data-precio="130000.00" data-img="./img/cpu_ryzen3_5300g.jpg">
+                        AGREGAR AL CARRITO
+                    </button>
+                </article>
             </section>
+
             <section id="descripcion-producto">
                 <h3>Descripción del Artículo</h3>
-                <p>Potencia gamer en formato portátil. Pantalla de 144Hz para una fluidez máxima en tus juegos
-                    competitivos.</p>
+                <p>Con gráficos integrados Radeon, ideal para equipos sin tarjeta gráfica dedicada. Perfecto para
+                    ofimática, navegación y juegos ligeros.</p>
             </section>
+
             <section id="especificaciones">
                 <h3>Especificaciones Técnicas</h3>
-                <table border="1">
+                <table class="tabla-especificaciones">
                     <tr>
-                        <th>Procesador</th>
-                        <td>Intel Core i7</td>
-                        <th>Gráficos</th>
-                        <td>RTX 4060 8GB</td>
+                        <th>Marca</th>
+                        <td>AMD</td>
+                        <th>Socket</th>
+                        <td>AM4</td>
                     </tr>
                     <tr>
-                        <th>Pantalla</th>
-                        <td>15.6" 144Hz</td>
-                        <th>Memoria</th>
-                        <td>16GB DDR5</td>
+                        <th>Núcleos</th>
+                        <td>4</td>
+                        <th>Hilos</th>
+                        <td>8</td>
                     </tr>
                     <tr>
-                        <th>Almacenamiento</th>
-                        <td>1TB SSD NVMe</td>
-                        <th>Sistema</th>
-                        <td>FreeDOS</td>
+                        <th>Frecuencia Base</th>
+                        <td>3.5 GHz</td>
+                        <th>Frecuencia Turbo</th>
+                        <td>4.2 GHz</td>
+                    </tr>
+                    <tr>
+                        <th>GPU Integrada</th>
+                        <td>Radeon Graphics</td>
+                        <th></th>
+                        <td></td>
                     </tr>
                 </table>
             </section>
         </main>
+
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -73,13 +114,13 @@
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
-            <div class="limpiar"></div>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

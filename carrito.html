@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - TecnoShop</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/carrito.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header class="header-principal">
+            <div class="logo-container"><a href="index.html"><img src="./img/logo.png" alt="Logo" width="100"></a></div>
+            <div class="acciones-container">
+                <a href="carrito.html" class="btn-carrito-header">🛒 <span id="contador-carrito">0</span></a>
+            </div>
+        </header>
+
+        <main id="vista-carrito">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="margin: 0; color: #22323d;">Productos en tu carrito</h2>
+                <a href="index.html" class="btn-carrito"
+                    style="width: auto; padding: 8px 15px; text-decoration: none; background-color: #f2f2f2; color: #333; border-color: #ccc;">←
+                    Volver a la Tienda</a>
+            </div>
+
+            <div class="carrito-flex">
+                <!-- IZQUIERDA: Donde el JS inyecta los productos -->
+                <div id="lista-productos-carrito">
+                    <div id="contenedor-items">
+                        <p class="carrito-vacio">Tu carrito está vacío.</p>
+                    </div>
+                </div>
+
+                <!-- DERECHA: Resumen -->
+                <div id="resumen-compra">
+                    <h3>Resumen de compra</h3>
+                    <div class="fila-resumen"><span>Subtotal:</span><span>$<span id="subtotal">0.00</span></span></div>
+
+                    <div class="opciones-pago">
+                        <label for="metodo-pago">Método de pago:</label>
+                        <select id="metodo-pago">
+                            <option value="">Seleccioná una opción...</option>
+                            <option value="efectivo">Efectivo (10% OFF)</option>
+                            <option value="transferencia">Transferencia (15% OFF)</option>
+                            <option value="tarjeta">3 Cuotas Fijas (20% Recargo)</option>
+                        </select>
+                    </div>
+
+                    <div id="texto-cuotas" class="fila-resumen" style="display: none; font-size: 14px;">
+                        <span>3 cuotas fijas de:</span><span>$<span id="valor-cuota">0.00</span></span>
+                    </div>
+
+                    <div class="fila-resumen total-destacado">
+                        <span>Total a pagar:</span><span>$<span id="total-final">0.00</span></span>
+                    </div>
+
+                    <div class="botones-accion">
+                        <button id="btn-confirmar" class="btn-carrito btn-confirmar">Confirmar Compra</button>
+                        <button id="btn-vaciar" class="btn-carrito">Vaciar Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© TecnoShop - Av Independencia 820, CABA</p>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

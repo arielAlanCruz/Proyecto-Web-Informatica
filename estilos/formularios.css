@@ -1,0 +1,94 @@
+/* --- ESTILOS UNIFICADOS PARA FORMULARIOS --- */
+.formulario-contenedor {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.formulario-contenedor h2 {
+    text-align: center;
+    color: #22323d;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.formulario-contenedor p.descripcion {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 14px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.botones button {
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.botones button:hover {
+    background-color: #e68a00;
+}
+
+/* Feedback de errores y éxitos */
+#mensaje-feedback {
+    display: none;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}

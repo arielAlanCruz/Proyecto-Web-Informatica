@@ -1,0 +1,132 @@
+/* --- LAYOUT PRINCIPAL DE DETALLE --- */
+#detalle-principal {
+    padding: 30px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contenedor-imagen {
+    width: 45%;
+    text-align: center;
+}
+
+#contenedor-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+#contenedor-info {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contenedor-info h2 {
+    font-size: 26px;
+    color: #22323d;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.precio-grande {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* --- BOTÓN GRANDE DE COMPRA --- */
+.btn-comprar {
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #e68a00;
+    box-shadow: 0px 5px 15px rgba(255, 153, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+/* --- SECCIONES DE DESCRIPCIÓN Y TABLA --- */
+#descripcion-producto,
+#especificaciones {
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    box-sizing: border-box;
+    width: 100%;
+    /* Para que ocupen todo el ancho debajo del flex */
+}
+
+#descripcion-producto h3,
+#especificaciones h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #22323d;
+    font-size: 18px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+#descripcion-producto p {
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Tabla de Especificaciones */
+.tabla-especificaciones {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabla-especificaciones th,
+.tabla-especificaciones td {
+    padding: 12px;
+    border: 1px solid #e1e8ed;
+    color: #555;
+}
+
+.tabla-especificaciones th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    width: 25%;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+
+    #contenedor-imagen,
+    #contenedor-info {
+        width: 100%;
+    }
+
+    #contenedor-info {
+        padding: 10px 0;
+    }
+}

@@ -4,96 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <title>TecnoShop - Tienda de Informática</title>
-    <link rel="stylesheet" href="estilos.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo2.png">
 </head>
 
 <body>
     <div id="contenedor">
-        <header>
-            <h1>TecnoShop - Tu tienda de confianza</h1>
-            <img src="img/logo.png" alt="Logo" width="100">
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná enter)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="/form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </div>
         </header>
 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Procesadores</a></li>
-                <li><a href="#">Placas de Video</a></li>
-                <li><a href="#">Outlet</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
 
         <main>
             <section id="galeria-productos">
                 <article class="tarjeta">
-                    <img src="img/ssd.jpg" alt="SSD Crucial">
-                    <h3>SSD Crucial 500GB BX500</h3>
-                    <p class="precio">$ 123.004,73</p>
-                    <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto1.html"><button class="btn-seleccionar">Seleccionar</button></a>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="img/Intel Core Ultra 5.jpg" alt="Intel Ultra 5">
+                    <img src="./img/cpu_Intel Core Ultra 5.jpg" alt="Intel Core Ultra 5">
                     <h3>Intel Core Ultra 5 245k</h3>
                     <p class="precio">$ 396.588,92</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto2.html"><button class="btn-seleccionar">Seleccionar</button></a>
+                    <!-- SIN <button>, el <a> actúa como botón -->
+                    <a href="producto1.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
                 <article class="tarjeta">
-                    <img src="img/PCGamer.jpg" alt="PC Gamer Ryzen 7">
-                    <h3>PC Gamer Ryzen 7 5700G</h3>
-                    <p class="precio">$ 772.845,29</p>
+                    <img src="./img/Notebook Asus TUF.jpg" alt="Notebook Asus TUF">
+                    <h3>Notebook Asus TUF Gaming</h3>
+                    <p class="precio">$ 189.004,73</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto3.html"><button class="btn-seleccionar">Seleccionar</button></a>
+                    <a href="producto28.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
                 <article class="tarjeta">
-                    <img src="img/Mother B650.png" alt="Mother B650">
-                    <h3>Mother B650 Aero G AM5</h3>
+                    <img src="./img/placaVideo_rtx4060oc.png" alt="RTX 4060 OC">
+                    <h3>Placa de Video RTX 4060 OC</h3>
+                    <p class="precio">$ 250.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto35.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/mother_am4B550l.png" alt="Mother B550I AM4">
+                    <h3>Mother B550I AM4</h3>
                     <p class="precio">$ 426.919,51</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto4.html"><button class="btn-seleccionar">Seleccionar</button></a>
+                    <a href="producto19.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
                 <article class="tarjeta">
-                    <img src="img/Teclado Royal R65.jpg" alt="Teclado RK">
-                    <h3>Teclado Royal Kludge R65</h3>
+                    <img src="./img/ssd_crucial.jpg" alt="SSD Crucial 500GB">
+                    <h3>SSD Crucial 500GB BX500</h3>
+                    <p class="precio">$ 123.004,73</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto48.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/Teclado Royal R65.jpg" alt="Teclado Royal R65">
+                    <h3>Teclado Royal R65</h3>
                     <p class="precio">$ 47.506,71</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto5.html"><button class="btn-seleccionar">Seleccionar</button></a>
+                    <a href="producto55.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
                 <article class="tarjeta">
-                    <img src="img/RAM Corsair.jpg" alt="RAM Corsair">
-                    <h3>RAM Corsair 16GB 5200Mhz</h3>
-                    <p class="precio">$ 405.994,13</p>
+                    <img src="./img/mando_ps5Azul.jpeg" alt="Mando PS5 Azul">
+                    <h3>Mando PS5 Azul</h3>
+                    <p class="precio">$ 137.877,00</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto6.html"><button class="btn-seleccionar">Seleccionar</button></a>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="img/Joystick Fantech Revolver.jpg" alt="Joystick Fantech">
-                    <h3>Joystick Fantech Revolver</h3>
-                    <p class="precio">$ 35.990,00</p>
-                    <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto7.html"><button class="btn-seleccionar">Seleccionar</button></a>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="img/Notebook Asus TUF.jpg" alt="Notebook Asus">
-                    <h3>Notebook Asus TUF 15.6"</h3>
-                    <p class="precio">$ 2.195.066,48</p>
-                    <p class="cuotas">6 cuotas sin interés</p>
-                    <a href="producto8.html"><button class="btn-seleccionar">Seleccionar</button></a>
+                    <a href="producto11.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
                 <div class="limpiar"></div>
             </section>
         </main>
-
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -101,22 +113,25 @@
                     clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
                     para los amantes de la informática y el gaming.</p>
             </div>
+
             <div class="footer-col">
-                <h3>Contacto</h3>
+                <!-- TOQUE DE UX: El título "Contacto" ahora es un enlace al formulario -->
+                <h3><a href="contactanos.html" style="color: inherit; text-decoration: none;">Contacto</a></h3>
                 <p>Av Independencia 820, CABA</p>
                 <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
                 <p>Tel: 11 60402020</p>
             </div>
+
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
-            <div class="limpiar"></div>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

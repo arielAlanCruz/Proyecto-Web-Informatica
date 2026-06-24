@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoShop - Mando Razer Pro</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="registro.html" class="btn-registro" id="user-display">🎁 10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="detalle-principal">
+                <article id="contenedor-imagen">
+                    <img src="./img/mando_razerPro.png" alt="Mando Razer Pro">
+                </article>
+                <article id="contenedor-info">
+                    <h2>Mando Profesional Razer Pro – Inalámbrico</h2>
+                    <p class="precio-grande">$ 126.745,07</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="14" data-nombre="Mando Razer Pro Inalámbrico"
+                        data-precio="126745.07" data-img="./img/mando_razerPro.png">
+                        AGREGAR AL CARRITO
+                    </button>
+                </article>
+            </section>
+
+            <section id="descripcion-producto">
+                <h3>Descripción del Artículo</h3>
+                <p>Control profesional con latencia ultrabaja y personalización. Ideal para eSports y gaming
+                    competitivo.</p>
+            </section>
+
+            <section id="especificaciones">
+                <h3>Especificaciones Técnicas</h3>
+                <table class="tabla-especificaciones">
+                    <tr>
+                        <th>Conexión</th>
+                        <td>Bluetooth 5.0 / USB-C</td>
+                        <th>Compatibilidad</th>
+                        <td>PC, Xbox, Android</td>
+                    </tr>
+                    <tr>
+                        <th>Batería</th>
+                        <td>1000 mAh</td>
+                        <th>Color</th>
+                        <td>Negro</td>
+                    </tr>
+                    <tr>
+                        <th>Características</th>
+                        <td>Interruptores HyperSpeed, Botones programables</td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>Quiénes somos</h3>
+                <p>En TecnoShop nos apasiona la tecnología y nos dedicamos a ofrecer los mejores productos a nuestros
+                    clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
+                    para los amantes de la informática y el gaming.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Av Independencia 820, CABA</p>
+                <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
+                <p>Tel: 11 60402020</p>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

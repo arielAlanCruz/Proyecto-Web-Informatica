@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - TecnoShop</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/formularios.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo2.png">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="acciones-container">
+                <a href="carrito.html" class="btn-carrito-header">🛒 <span id="contador-carrito">0</span></a>
+            </div>
+        </header>
+
+        <main class="formulario-contenedor">
+            <h2>📝 Crear Cuenta</h2>
+            <p class="descripcion">Registrate para obtener un 10% de descuento en tu primera compra.</p>
+
+            <div id="mensaje-feedback"></div>
+
+            <form id="registroForm">
+                <div class="campo">
+                    <label for="nombre-usuario">Nombre de usuario:</label>
+                    <input type="text" id="nombre-usuario" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email-usuario">Correo electrónico:</label>
+                    <input type="text" id="email-usuario" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="pass-usuario">Contraseña (mínimo 8 caracteres):</label>
+                    <input type="password" id="pass-usuario" name="pass" required>
+                </div>
+                <div class="campo">
+                    <label for="pass-confirmar">Confirmar Contraseña:</label>
+                    <input type="password" id="pass-confirmar" name="passConfirm" required>
+                </div>
+
+                <div class="botones">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>© TecnoShop - Av Independencia 820, CABA</p>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/formularios.js"></script>
+</body>
+
+</html>

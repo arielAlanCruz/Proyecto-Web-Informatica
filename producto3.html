@@ -3,60 +3,95 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TecnoShop - PC Gamer</title>
-    <link rel="stylesheet" href="estilos-producto.css" type="text/css">
+    <title>TecnoShop - CPU AMD Ryzen 7</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
 </head>
 
 <body>
     <div id="contenedor">
-        <header>
-            <h1>TecnoShop - Tu tienda de confianza</h1>
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="registro.html" class="btn-registro" id="user-display">🎁 10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
+            </div>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Armado PC</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
+
         <main>
             <section id="detalle-principal">
-                <article id="contenedor-imagen"><img src="img/PCGamer.jpg" alt="PC Gamer"></article>
-                <article id="contenedor-info">
-                    <h2>PC Gamer AMD Ryzen 7 5700G 16GB SSD 480GB</h2>
-                    <p class="precio-grande">$ 772.845,29</p>
-                    <button class="btn-comprar">COMPRAR AHORA</button>
+                <article id="contenedor-imagen">
+                    <img src="./img/cpu_ryzen7.jpg" alt="AMD Ryzen 7">
                 </article>
-                <div class="limpiar"></div>
+                <article id="contenedor-info">
+                    <h2>CPU AMD Ryzen 7 7800X3D</h2>
+                    <p class="precio-grande">$ 350.000,00</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="3" data-nombre="AMD Ryzen 7 7800X3D"
+                        data-precio="350000.00" data-img="./img/cpu_ryzen7.jpg">
+                        AGREGAR AL CARRITO
+                    </button>
+                </article>
             </section>
+
             <section id="descripcion-producto">
                 <h3>Descripción del Artículo</h3>
-                <p>Equipo equilibrado para jugar a todo en calidad competitiva. Incluye kit de periféricos para una
-                    experiencia lista para usar.</p>
+                <p>Equilibrio perfecto entre rendimiento y eficiencia para juegos y streaming. La tecnología 3D V-Cache
+                    eleva el rendimiento en gaming.</p>
             </section>
+
             <section id="especificaciones">
                 <h3>Especificaciones Técnicas</h3>
-                <table border="1">
+                <table class="tabla-especificaciones">
                     <tr>
-                        <th>Procesador</th>
-                        <td>Ryzen 7 5700G</td>
-                        <th>RAM</th>
-                        <td>16GB DDR4</td>
+                        <th>Marca</th>
+                        <td>AMD</td>
+                        <th>Socket</th>
+                        <td>AM5</td>
                     </tr>
                     <tr>
-                        <th>Disco</th>
-                        <td>SSD 480GB</td>
-                        <th>Mother</th>
-                        <td>Chipset A520</td>
+                        <th>Núcleos</th>
+                        <td>8</td>
+                        <th>Hilos</th>
+                        <td>16</td>
                     </tr>
                     <tr>
-                        <th>Gabinete</th>
-                        <td>Kit ATX</td>
-                        <th>Fuente</th>
-                        <td>500W</td>
+                        <th>Frecuencia Base</th>
+                        <td>3.8 GHz</td>
+                        <th>Frecuencia Turbo</th>
+                        <td>5.0 GHz</td>
                     </tr>
                 </table>
             </section>
         </main>
+
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -73,13 +108,13 @@
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
                 </ul>
             </div>
-            <div class="limpiar"></div>
         </footer>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoShop - RX 6600</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <header class="header-principal">
+            <div class="logo-container">
+                <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
+            </div>
+            <div class="buscador-container">
+                <input type="text" id="buscador-texto" placeholder="Buscar producto globalmente (Presioná ENTER)...">
+            </div>
+            <div class="acciones-container">
+                <div class="usuario-menu-container">
+                    <a href="form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
+                    <div class="dropdown-menu-usuario" id="dropdown-usuario">
+                        <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
+                    </div>
+                </div>
+                <a href="carrito.html" class="btn-carrito-header">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                <li><a href="index_Discos.html">Discos</a></li>
+                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                <li><a href="index_Notebook.html">Notebooks</a></li>
+                <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
+                <li><a href="index_Teclados.html">Teclados</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="detalle-principal">
+                <article id="contenedor-imagen">
+                    <img src="./img/placaVideo_rx6600.jpg" alt="RX 6600">
+                </article>
+                <article id="contenedor-info">
+                    <h2>Placa de Video AMD Radeon RX 6600 - 8GB</h2>
+                    <p class="precio-grande">$ 300.000,00</p>
+
+                    <button class="btn-comprar btn-agregar" data-id="42" data-nombre="AMD RX 6600 8GB"
+                        data-precio="300000.00" data-img="./img/placaVideo_rx6600.jpg">
+                        AGREGAR AL CARRITO
+                    </button>
+                </article>
+            </section>
+
+            <section id="descripcion-producto">
+                <h3>Descripción del Artículo</h3>
+                <p>Placa de video AMD Radeon de gama media, ideal para gaming en 1080p y 1440p con excelente rendimiento
+                    en juegos modernos.</p>
+            </section>
+
+            <section id="especificaciones">
+                <h3>Especificaciones Técnicas</h3>
+                <table class="tabla-especificaciones">
+                    <tr>
+                        <th>Marca</th>
+                        <td>AMD</td>
+                        <th>Modelo</th>
+                        <td>RX 6600</td>
+                    </tr>
+                    <tr>
+                        <th>VRAM</th>
+                        <td>8GB GDDR6</td>
+                        <th>Bus</th>
+                        <td>128-bit</td>
+                    </tr>
+                    <tr>
+                        <th>Interfaz</th>
+                        <td>PCIe 4.0 x8</td>
+                        <th>Conectores</th>
+                        <td>HDMI 2.1, DisplayPort 1.4a</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>Quiénes somos</h3>
+                <p>En TecnoShop nos apasiona la tecnología y nos dedicamos a ofrecer los mejores productos a nuestros
+                    clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
+                    para los amantes de la informática y el gaming.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Av Independencia 820, CABA</p>
+                <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
+                <p>Tel: 11 60402020</p>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

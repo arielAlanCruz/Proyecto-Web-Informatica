@@ -1,0 +1,138 @@
+#vista-carrito {
+    padding: 30px 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 60vh;
+}
+
+.carrito-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+#lista-productos-carrito {
+    width: 65%;
+    box-sizing: border-box;
+}
+
+#resumen-compra {
+    width: 32%;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+}
+
+.fila-resumen {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.total-destacado {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    border-top: 2px dashed #ccc;
+    padding-top: 15px;
+}
+
+/* --- ESTILOS PARA MÉTODO DE PAGO --- */
+.opciones-pago {
+    margin: 15px 0;
+}
+
+.opciones-pago label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.opciones-pago select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* --- BOTONES --- */
+.botones-accion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-carrito {
+    background-color: #fff;
+    color: #cc0000;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #cc0000;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-carrito:hover {
+    background-color: #ffebeb;
+}
+
+.btn-confirmar {
+    background-color: #27ae60;
+    color: white;
+    border-color: #27ae60;
+}
+
+.btn-confirmar:hover {
+    background-color: #219150;
+}
+
+/* --- LISTA INYECTADA POR JS --- */
+.lista-carrito-simple {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-carrito-simple {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333;
+}
+
+.carrito-vacio {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+@media (max-width: 850px) {
+    .carrito-flex {
+        flex-wrap: wrap;
+    }
+
+    #lista-productos-carrito,
+    #resumen-compra {
+        width: 100%;
+    }
+}
