@@ -16,12 +16,15 @@
             <div class="logo-container">
                 <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
             </div>
-            <div class="buscador-container">
-                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná ENTER)...">
+
+            <div class="header-presentacion">
+                <h2>TecnoShop</h2>
+                <p>Tu tienda de informática y gaming de confianza</p>
             </div>
+
             <div class="acciones-container">
                 <div class="usuario-menu-container">
-                    <a href="registro.html" class="btn-registro" id="user-display">🎁 10% OFF Registrate</a>
+                    <a href="/form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
                     <div class="dropdown-menu-usuario" id="dropdown-usuario">
                         <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
                     </div>
@@ -31,13 +34,20 @@
                 </a>
             </div>
         </header>
-
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
-                <li><a href="index_Discos.html">Discos</a></li>
-                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+
+                <li class="dropdown-nav">
+                    <a href="#">Componentes ▼</a>
+                    <ul class="dropdown-content-nav">
+                        <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                        <li><a href="index_Discos.html">Discos</a></li>
+                        <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                        <li><a href="index_CPUs.html">CPUs</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="index_Notebook.html">Notebooks</a></li>
                 <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
                 <li><a href="index_Teclados.html">Teclados</a></li>

@@ -15,9 +15,12 @@
             <div class="logo-container">
                 <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
             </div>
-            <div class="buscador-container">
-                <input type="text" id="buscador-texto" placeholder="Buscar producto (presioná enter)...">
+
+            <div class="header-presentacion">
+                <h2>TecnoShop</h2>
+                <p>Tu tienda de informática y gaming de confianza</p>
             </div>
+
             <div class="acciones-container">
                 <div class="usuario-menu-container">
                     <a href="/form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
@@ -30,13 +33,20 @@
                 </a>
             </div>
         </header>
-
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
-                <li><a href="index_Discos.html">Discos</a></li>
-                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+
+                <li class="dropdown-nav">
+                    <a href="#">Componentes ▼</a>
+                    <ul class="dropdown-content-nav">
+                        <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                        <li><a href="index_Discos.html">Discos</a></li>
+                        <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                        <li><a href="index_CPUs.html">CPUs</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="index_Notebook.html">Notebooks</a></li>
                 <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
                 <li><a href="index_Teclados.html">Teclados</a></li>
@@ -51,7 +61,6 @@
                     <h3>Intel Core Ultra 5 245k</h3>
                     <p class="precio">$ 396.588,92</p>
                     <p class="cuotas">6 cuotas sin interés</p>
-                    <!-- SIN <button>, el <a> actúa como botón -->
                     <a href="producto1.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
 
@@ -115,7 +124,6 @@
             </div>
 
             <div class="footer-col">
-                <!-- TOQUE DE UX: El título "Contacto" ahora es un enlace al formulario -->
                 <h3><a href="contactanos.html" style="color: inherit; text-decoration: none;">Contacto</a></h3>
                 <p>Av Independencia 820, CABA</p>
                 <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>

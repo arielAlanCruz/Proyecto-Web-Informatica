@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoShop - Teclados</title>
+    <title>TecnoShop - CPUs y Procesadores</title>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
-    <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="./img/logo2.png">
 </head>
 
@@ -18,7 +17,6 @@
                 <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
             </div>
 
-            <!-- BLOQUE DE PRESENTACIÓN Y LEMA (CRITERIO UX/UI) -->
             <div class="header-presentacion">
                 <h2>TecnoShop</h2>
                 <p>Tu tienda de informática y gaming de confianza</p>
@@ -56,54 +54,80 @@
                 <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
-
+        <!-- CONTENIDO PRINCIPAL: GALERÍA DE PROCESADORES -->
         <main>
-            <section id="detalle-principal">
-                <article id="contenedor-imagen">
-                    <img src="./img/ssd_wdBlue500gb.png" alt="SSD WD Blue 500GB">
+            <h2 style="text-align: center; padding: 20px; color: #22323d;">CPUs y Procesadores</h2>
+
+            <section id="galeria-productos">
+                <article class="tarjeta">
+                    <img src="./img/cpu_Intel Core Ultra 5.jpg" alt="Intel Core Ultra 5">
+                    <h3>Intel Core Ultra 5 245k</h3>
+                    <p class="precio">$ 396.588,92</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto1.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
-                <article id="contenedor-info">
-                    <h2>SSD WD Blue - 500GB</h2>
-                    <p class="precio-grande">$ 123.504,73</p>
 
-                    <button class="btn-comprar btn-agregar" data-id="44" data-nombre="SSD WD Blue 500GB"
-                        data-precio="123504.73" data-img="./img/ssd_wdBlue500gb.png">
-                        AGREGAR AL CARRITO
-                    </button>
+                <article class="tarjeta">
+                    <img src="./img/cpu_intelCorei9ultra.jpg" alt="Intel Core i9 Ultra">
+                    <h3>Intel Core i9 Ultra</h3>
+                    <p class="precio">$ 450.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto2.html" class="btn-seleccionar">Ver Detalle</a>
                 </article>
-            </section>
 
-            <section id="descripcion-producto">
-                <h3>Descripción del Artículo</h3>
-                <p>Disco sólido de alta fiabilidad y rendimiento. Ideal para mejorar la velocidad de tu PC o notebook.
-                </p>
-            </section>
+                <article class="tarjeta">
+                    <img src="./img/cpu_ryzen7.jpg" alt="AMD Ryzen 7">
+                    <h3>AMD Ryzen 7</h3>
+                    <p class="precio">$ 350.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto3.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
 
-            <section id="especificaciones">
-                <h3>Especificaciones Técnicas</h3>
-                <table class="tabla-especificaciones">
-                    <tr>
-                        <th>Marca</th>
-                        <td>WD</td>
-                        <th>Capacidad</th>
-                        <td>500 GB</td>
-                    </tr>
-                    <tr>
-                        <th>Interfaz</th>
-                        <td>SATA III</td>
-                        <th>Velocidad Lectura</th>
-                        <td>560 MB/s</td>
-                    </tr>
-                    <tr>
-                        <th>Velocidad Escritura</th>
-                        <td>530 MB/s</td>
-                        <th>Formato</th>
-                        <td>2.5"</td>
-                    </tr>
-                </table>
+                <article class="tarjeta">
+                    <img src="./img/cpu_intelCorei5.jpeg" alt="Intel Core i5">
+                    <h3>Intel Core i5</h3>
+                    <p class="precio">$ 250.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto4.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/cpu_pentium.jpeg" alt="Intel Pentium">
+                    <h3>Intel Pentium</h3>
+                    <p class="precio">$ 80.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto5.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/cpu_ryzenAthlon.jpg" alt="AMD Ryzen Athlon">
+                    <h3>AMD Ryzen Athlon</h3>
+                    <p class="precio">$ 90.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto6.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/cpu_intelCorei9.jpg" alt="Intel Core i9">
+                    <h3>Intel Core i9</h3>
+                    <p class="precio">$ 500.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto7.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/cpu_ryzen3_5300g.jpg" alt="AMD Ryzen 3 5300G">
+                    <h3>AMD Ryzen 3 5300G</h3>
+                    <p class="precio">$ 130.000,00</p>
+                    <p class="cuotas">6 cuotas sin interés</p>
+                    <a href="producto8.html" class="btn-seleccionar">Ver Detalle</a>
+                </article>
+
+                <div class="limpiar"></div>
             </section>
         </main>
 
+        <!-- FOOTER -->
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -111,14 +135,12 @@
                     clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
                     para los amantes de la informática y el gaming.</p>
             </div>
-
             <div class="footer-col">
                 <h3><a href="contactanos.html" style="color: inherit; text-decoration: none;">Contacto</a></h3>
                 <p>Av Independencia 820, CABA</p>
                 <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
                 <p>Tel: 11 60402020</p>
             </div>
-
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>

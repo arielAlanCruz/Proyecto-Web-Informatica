@@ -3,47 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TecnoShop - Teclado Trust Zora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoShop - Teclados</title>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="./estilos/estilos.css" type="text/css">
     <link rel="stylesheet" href="./estilos/estilos-producto.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo2.png">
 </head>
 
 <body>
     <div id="contenedor">
-
         <header class="header-principal">
             <div class="logo-container">
                 <a href="index.html"><img src="./img/logo.png" alt="TecnoShop Logo" width="100"></a>
             </div>
-            <div class="buscador-container">
-                <input type="text" id="buscador-texto" placeholder="Buscar producto globalmente (Presioná ENTER)...">
+
+            <!-- BLOQUE DE PRESENTACIÓN Y LEMA (CRITERIO UX/UI) -->
+            <div class="header-presentacion">
+                <h2>TecnoShop</h2>
+                <p>Tu tienda de informática y gaming de confianza</p>
             </div>
+
             <div class="acciones-container">
                 <div class="usuario-menu-container">
-                    <a href="form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
+                    <a href="/form_registro.html" class="btn-registro" id="user-display">10% OFF Registrate</a>
                     <div class="dropdown-menu-usuario" id="dropdown-usuario">
                         <button id="btn-logout-dropdown" class="btn-logout-item">❌ Cerrar Sesión</button>
                     </div>
                 </div>
-                <a href="carrito.html" class="btn-carrito-header">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+                <a href="carrito.html" class="btn-carrito-header">
+                    🛒 <span id="contador-carrito">0</span>
+                </a>
             </div>
         </header>
-
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="index_Placas de Video.html">Placas de Video</a></li>
-                <li><a href="index_Discos.html">Discos</a></li>
-                <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+
+                <li class="dropdown-nav">
+                    <a href="#">Componentes ▼</a>
+                    <ul class="dropdown-content-nav">
+                        <li><a href="index_Placas de Video.html">Placas de Video</a></li>
+                        <li><a href="index_Discos.html">Discos</a></li>
+                        <li><a href="index_PlacasMadre.html">Placas Madre</a></li>
+                        <li><a href="index_CPUs.html">CPUs</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="index_Notebook.html">Notebooks</a></li>
                 <li><a href="index_Mandos-Joystick.html">Mandos y Joystick</a></li>
                 <li><a href="index_Teclados.html">Teclados</a></li>
                 <li><a href="contactanos.html">Contacto</a></li>
             </ul>
         </nav>
-
         <main>
             <section id="detalle-principal">
                 <article id="contenedor-imagen">
@@ -90,7 +102,6 @@
                 </table>
             </section>
         </main>
-
         <footer>
             <div class="footer-col">
                 <h3>Quiénes somos</h3>
@@ -98,12 +109,14 @@
                     clientes. Con años de experiencia en el mercado, nos hemos convertido en una tienda de confianza
                     para los amantes de la informática y el gaming.</p>
             </div>
+
             <div class="footer-col">
-                <h3>Contacto</h3>
+                <h3><a href="contactanos.html" style="color: inherit; text-decoration: none;">Contacto</a></h3>
                 <p>Av Independencia 820, CABA</p>
                 <p class="horario">LUN A VIER: 10 A 13 / 14 A 17 HS</p>
                 <p>Tel: 11 60402020</p>
             </div>
+
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <ul>

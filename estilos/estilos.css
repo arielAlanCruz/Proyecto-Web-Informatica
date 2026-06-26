@@ -1,6 +1,6 @@
 /* --- RESET Y GENERALES --- */
 body {
-    margin: 0;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f2f2f2;
 }
@@ -26,21 +26,26 @@ body {
     vertical-align: middle;
 }
 
-.buscador-container {
+/* --- PRESENTACIÓN Y LEMA EN HEADER (CRITERIO UX/UI) --- */
+.header-presentacion {
     flex-grow: 1;
     text-align: center;
-    padding: 0 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
 }
 
-.buscador-container input {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    outline: none;
-    box-sizing: border-box;
+.header-presentacion h2 {
+    margin: 0px;
+    font-size: 22px;
+    color: #ff9900;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.header-presentacion p {
+    margin: 4px 0px 0px 0px;
+    font-size: 13px;
+    color: #cccccc;
 }
 
 .acciones-container {
@@ -53,7 +58,7 @@ body {
 .btn-registro,
 .btn-carrito-header {
     height: 42px;
-    padding: 0 18px;
+    padding: 0px 18px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 8px;
@@ -81,9 +86,13 @@ body {
 .btn-carrito-header {
     background-color: #ff9900;
     color: white;
-    padding: 0 12px;
+    padding: 0px 12px;
     gap: 6px;
     border: none;
+}
+
+.btn-carrito-header:hover {
+    background-color: #e68a00;
 }
 
 #contador-carrito {
@@ -105,14 +114,14 @@ body {
     display: none;
     position: absolute;
     top: 108%;
-    right: 0;
+    right: 0px;
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     min-width: 135px;
-    padding: 4px 0;
+    padding: 4px 0px;
     box-sizing: border-box;
 }
 
@@ -134,30 +143,88 @@ body {
     color: #c0392b;
 }
 
-/* --- NAVEGACIÓN FLEXBOX --- */
+/* --- NAVEGACIÓN PRINCIPAL (CORREGIDO CON > ) --- */
 nav {
     background-color: #22323d;
+    /* Ahora se aplicará correctamente */
+    position: relative;
+    z-index: 999;
+    overflow: visible;
 }
 
-nav ul {
+/* Usamos "nav > ul" para que SOLO afecte a la barra principal y no al submenú */
+nav>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     height: 40px;
 }
 
-nav ul li a {
+nav>ul>li>a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
-nav ul li a:hover {
+nav>ul>li>a:hover {
     color: #ff9900;
+}
+
+/* --- MENÚ DESPLEGABLE ESTÁTICO Y SÓLIDO --- */
+.dropdown-nav {
+    position: relative;
+}
+
+/* Caja estática flotante con fondo sólido oscuro */
+.dropdown-content-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #22323d;
+    /* Color estático sólido */
+    list-style: none;
+    padding: 5px 0px;
+    margin: 0px;
+    min-width: 180px;
+    z-index: 1000;
+    border-radius: 4px;
+    border-top: 2px solid #ff9900;
+    /* Línea de acento naranja */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para despegar del fondo */
+}
+
+/* Forzamos a que los elementos internos del submenú se apilen uno debajo del otro */
+.dropdown-content-nav li {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content-nav li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content-nav li a:hover {
+    background-color: #1a252f;
+    /* Cambio de color al pasar el cursor */
+    color: #ff9900;
+}
+
+/* Mostrar el submenú flotante */
+.dropdown-nav:hover .dropdown-content-nav {
+    display: block;
 }
 
 /* --- GALERÍA DE PRODUCTOS (INDEX Y CATEGORÍAS) --- */
@@ -179,7 +246,8 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     text-align: center;
     box-sizing: border-box;
-    display: flex;
+    display: none;
+    /* MODIFICADO: Permite la animación de fadeIn de jQuery */
     flex-direction: column;
     justify-content: space-between;
     border-radius: 4px;
@@ -189,7 +257,7 @@ nav ul li a:hover {
 .tarjeta:hover {
     transform: scale(1.02);
     border-color: #ff9900;
-    box-shadow: 0 6px 12px rgba(255, 153, 0, 0.15);
+    box-shadow: 0px 6px 12px rgba(255, 153, 0, 0.15);
 }
 
 .tarjeta img {
@@ -201,7 +269,7 @@ nav ul li a:hover {
 
 .tarjeta h3 {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 0px;
     color: #333;
     line-height: 1.3;
 }
@@ -210,7 +278,7 @@ nav ul li a:hover {
     color: #000;
     font-weight: bold;
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 
 .cuotas {
@@ -220,7 +288,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* --- BOTONES DE TARJETA (VER DETALLE / AGREGAR) --- */
+/* --- BOTONES DE TARJETA --- */
 .btn-seleccionar,
 .btn-agregar {
     background-color: #ff9900;
@@ -236,6 +304,7 @@ nav ul li a:hover {
     display: block;
     box-sizing: border-box;
     margin-top: 10px;
+    transition: background-color 0.2s ease;
 }
 
 .btn-seleccionar:hover,
@@ -268,12 +337,17 @@ footer {
 
 .footer-col ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
 }
 
 .footer-col a {
     color: #ccc;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #ff9900;
 }
 
 /* --- RESPONSIVE --- */
@@ -283,14 +357,53 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
-    .tarjeta {
-        width: 100%;
+@media (max-width: 768px) {
+    .header-principal {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-presentacion {
+        padding: 5px 0px;
     }
 
     nav ul {
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
-        padding: 10px 0;
+        padding: 10px 0px;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    /* Adaptación del desplegable para móviles */
+    .dropdown-content-nav {
+        position: static;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: none;
+        border-top: none;
+        padding-left: 15px;
+    }
+
+    .dropdown-content-nav li a {
+        text-align: center;
+        font-size: 13px;
+        padding: 8px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tarjeta {
+        width: 100%;
     }
 }
